@@ -1,0 +1,3 @@
+- [x] Update index.html to add priority select, user input, date input, sort buttons
+- [x] Update src/index.js to handle new fields, set colors, add edit, mark done, sort functionality
+- [x] Test the application

@@ -17,11 +17,23 @@
       name="new-task-description"
       placeholder="description"
     />
+    <label for="priority">Priority:</label>
+    <select id="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <label for="user">User:</label>
+    <input type="text" id="user" placeholder="user" />
+    <label for="date-due">Date Due:</label>
+    <input type="date" id="date-due" />
     <input type="submit" value="Create New Task" />
   </form>
 
   <!-- Task list -->
   <ul id="tasks"></ul>
+  <button id="sort-asc">Sort by Priority Asc</button>
+  <button id="sort-desc">Sort by Priority Desc</button>
 
   <script src="./src/index.js"></script>
 </body>
