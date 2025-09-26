@@ -1,36 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TaskLister</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    #tasks {
-      list-style: none;
-      padding: 0;
-    }
-    #tasks li {
-      margin: 10px 0;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    button {
-      cursor: pointer;
-      padding: 5px 10px;
-    }
-    select, input[type="text"] {
-      margin: 5px;
-      padding: 5px;
-    }
-  </style>
 </head>
 <body>
+  <h1>Task Lister</h1>
+
   <form id="create-task-form" action="#" method="POST">
     <label for="new-task-description">Task description:</label>
     <input
@@ -39,8 +16,20 @@
       name="new-task-description"
       placeholder="description"
     />
+
+    <label for="priority">Priority:</label>
+    <select id="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+
     <input type="submit" value="Create New Task" />
   </form>
+
+  <h2>My Tasks</h2>
+  <ul id="tasks"></ul>
+
   <script src="./src/index.js"></script>
 </body>
 </html>
