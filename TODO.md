@@ -1,3 +1,6 @@
-- [x] Update index.html to add priority select, user input, date input, sort buttons
-- [x] Update src/index.js to handle new fields, set colors, add edit, mark done, sort functionality
-- [x] Test the application
+- [x] Implement form submission handler to prevent default behavior
+- [x] Retrieve task description from input field
+- [x] Create a new <li> element with the task text
+- [x] Append the <li> to the #tasks <ul>
+- [x] Clear the input field after submission
+- [x] Test the functionality in the browser
